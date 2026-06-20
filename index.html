@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>A-Frame 終極測試</title>
+    <style>
+      /* 強制讓網頁滿版，防止畫布被擠壓 */
+      html, body {
+        margin: 0;
+        padding: 0;
+        width: 100vw;
+        height: 100vh;
+        overflow: hidden;
+        background-color: #111;
+      }
+    </style>
+    <!-- 載入 A-Frame 核心 -->
+    <script src="https://aframe.io"></script>
+  </head>
+  <body>
+
+    <!-- 加上 vr-mode-ui，等一下可以看有沒有右下角按鈕 -->
+    <a-scene device-orientation-permission-ui-enabled="false" vr-mode-ui="enabled: true">
+      
+      <!-- 1. 新增一台固定位置的相機，確保眼睛在方塊正前方 -->
+      
+
+      <!-- 2. 紅色方塊（移高一點點） -->
+      <a-box position="0 1.6 -3" rotation="0 45 0" color="#E74C3C"></a-box>
+      
+      <!-- 3. 綠色地板 -->
+      <a-plane position="0 0 0" rotation="-90 0 0" width="10" height="10" color="#2ECC71"></a-plane>
+      
+      <!-- 4. 藍色天空 -->
+      <a-sky color="#3498DB"></a-sky>
+
+    </a-scene>
+
+  </body>
+</html>
