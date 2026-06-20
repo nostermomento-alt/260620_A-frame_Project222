@@ -9,8 +9,8 @@
     <script src="https://cdn.jsdelivr.net/npm/aframe-extras@7.0.0/dist/aframe-extras.loaders.min.js"></script>
   </head>
   <body>
-    <!-- 3. 场景配置 -->
-    <a-scene background="color: #ECECEC" renderer="colorManagement: true;">
+    <!-- 3. 场景配置：背景颜色改为黑色 -->
+    <a-scene background="color: #000000" renderer="colorManagement: true;">
       
       <!-- === 灯光系统（为您模型打光） === -->
       <!-- 环境光：提供基础均匀照明，避免全黑 -->
@@ -34,7 +34,7 @@
       ></a-entity>
 
       <!-- 相机：设置到合适位置观察模型 -->
-      <a-camera position="0 1.6 4"></a-camera>
+      <a-camera position="0 0 4"></a-camera>
       
     </a-scene>
   </body>
